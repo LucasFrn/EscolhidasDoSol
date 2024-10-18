@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TesteMovimentacao.unity
+    guid: 30117e9fc127f3c438829d5a04eed221
+  - enabled: 1
+    path: Assets/Scenes/TesteCombate.unity
+    guid: 628fedcd9931e3e46940487b9212a86b
   m_configObjects: {}

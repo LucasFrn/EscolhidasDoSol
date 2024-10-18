@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public abstract class Personagem : MonoBehaviour
 {
+    public int maxVida;
     public int vida { get; set; }
-    public float destreza { get; set; }
-    public int ataque { get; set; }
+    public float destreza;
+    public int ataque;
     public int ataqueMagico { get; set; }
     public int energia { get; set; }
     public int recuperacao { get; set; }
@@ -35,6 +37,10 @@ public abstract class Personagem : MonoBehaviour
     public void SofrerDano(int dano)
     {
         vida -= dano;
+        if (vida <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
     public void Curar(int cura)
     {
