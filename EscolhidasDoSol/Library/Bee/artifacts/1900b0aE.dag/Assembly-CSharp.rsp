@@ -359,6 +359,7 @@
 "Assets/Scripts/MonsterAI.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SceneChangerOnCollision.cs"
+"Assets/Scripts/ScriptsTest/Caixa.cs"
 -langversion:9.0
 /deterministic
 /optimize+
