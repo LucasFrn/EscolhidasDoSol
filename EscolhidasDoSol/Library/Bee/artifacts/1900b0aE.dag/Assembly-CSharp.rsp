@@ -356,9 +356,16 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Character.cs"
+"Assets/Scripts/Combat/SistemaDeTurnos.cs"
 "Assets/Scripts/MonsterAI.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SceneChangerOnCollision.cs"
+"Assets/Scripts/UI/ActionBarUI.cs"
+"Assets/Scripts/UI/CharacterStatusUI.cs"
+"Assets/Scripts/UI/PersonagemUI.cs"
+"Assets/Scripts/UI/TurnosUI.cs"
+"Assets/Scripts/UI/UIBarsFollow.cs"
 -langversion:9.0
 /deterministic
 /optimize+
