@@ -35,15 +35,27 @@ public class PlayerMovement : MonoBehaviour
         {
             float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
 
-            float moveX = Input.GetAxis("Horizontal") * currentSpeed;
-            float moveZ = Input.GetAxis("Vertical") * currentSpeed;
+            float moveX = Input.GetAxis("Horizontal");
+            float moveZ = Input.GetAxis("Vertical");
 
-            Vector3 move = transform.right * moveX + transform.forward * moveZ;
+            Vector3 moveDirection = new Vector3(moveX, 0, moveZ).normalized;
+
+            // Ajusta a rotação para a direção do movimento
+            if (moveDirection != Vector3.zero)
+            {
+                float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+                float snappedAngle = Mathf.Round(targetAngle / 90) * 90; // Ajusta para 90 graus
+                transform.rotation = Quaternion.Euler(0, snappedAngle, 0);
+            }
+
+            Vector3 move = moveDirection * currentSpeed;
             rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);
         }
+
         animator.enabled = true;
         AnimationMoviment();
     }
+
     private void AnimationMoviment()
     {
         bool frente = Input.GetKey(KEY_FRONTAL);
@@ -53,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         bool correndo = Input.GetKey(KEY_CORRER);
 
         float vMaxAtual = correndo ? vMaxCorrer : vMaxAndar;
+
         // Atualizar velocidades com aceleração/desaceleração
         vZ = AtualizarVelocidade(vZ, frente, tras, vMaxAtual);
         vX = AtualizarVelocidade(vX, direita, esquerda, vMaxAtual);
@@ -61,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Z", vZ);
         animator.SetFloat("X", vX);
     }
+
     private float AtualizarVelocidade(float valorAtual, bool positivo, bool negativo, float velocidadeMaxima)
     {
         if (positivo)
@@ -86,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
 
         return valorAtual;
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {
