@@ -365,6 +365,7 @@
 "Assets/Scripts/Quests/Quest.cs"
 "Assets/Scripts/Quests/QuestAbate.cs"
 "Assets/Scripts/SceneChangerOnCollision.cs"
+"Assets/Scripts/ScriptsTest/Caixa.cs"
 "Assets/Scripts/UI/ActionBarUI.cs"
 "Assets/Scripts/UI/CharacterStatusUI.cs"
 "Assets/Scripts/UI/PersonagemUI.cs"
