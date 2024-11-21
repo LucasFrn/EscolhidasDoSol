@@ -20511,7 +20511,11 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 1540452,
+<<<<<<< Updated upstream
       "PayloadLength": 33118,
+=======
+      "PayloadLength": 33156,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -20523,7 +20527,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1573657,
+=======
+      "PayloadOffset": 1573695,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -20780,6 +20788,7 @@
         "Assets/Scripts/Quests/Quest.cs",
         "Assets/Scripts/Quests/QuestAbate.cs",
         "Assets/Scripts/SceneChangerOnCollision.cs",
+        "Assets/Scripts/ScriptsTest/Caixa.cs",
         "Assets/Scripts/UI/ActionBarUI.cs",
         "Assets/Scripts/UI/CharacterStatusUI.cs",
         "Assets/Scripts/UI/PersonagemUI.cs",
@@ -21043,7 +21052,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1573753,
+=======
+      "PayloadOffset": 1573791,
+>>>>>>> Stashed changes
       "PayloadLength": 9533,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
